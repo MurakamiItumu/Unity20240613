@@ -18,7 +18,7 @@ public class blockGenerator : MonoBehaviour
     {
         //ボタンのポジション
         int px, py;
-        px = -5;
+        px = -7;
         py = 5;
         //ブロックの配置
         for(int i = 0;i< row; i++)
@@ -30,6 +30,8 @@ public class blockGenerator : MonoBehaviour
                 go.transform.position = new Vector3(px + (j * (span + blockScaleX)), py+(i*(span+blockScaleY)), 0);
             }
         }
+        //スコア初期化
+        
     }
 
     // Update is called once per frame
